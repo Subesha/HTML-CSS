@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premier Model Agency</title>
+    <style>
+        /* Centering the title */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+            text-align: center;
+        }
+        .Website_title {
+            font-family: 'Gilroy', sans-serif;
+            font-size: 50px;
+            font-weight: bold;
+            display: inline-block;
+            position: relative;
+        }
+        .styledimage {
+            width: 17px;
+            height: 15px;
+            position: absolute;
+            top: 0px;
+            right: -20px;
+        }
+
+        .model {
+            font-family: 'Lucida Sans', sans-serif;
+            font-size: 9px;
+            color: rgb(115, 112, 112);
+            position: absolute;
+            top: 100%;
+            right: 0;
+            white-space: nowrap;
+        }
+
+        /* Ensuring the words stay in a single line */
+        .word-container {
+            line-height: 4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            gap: 160px; /* Adjust spacing between words */
+            margin-top: 25px;
+            white-space: nowrap; /* Prevents line breaks */
+        }
+        .imagecont {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 20vh; /* Full viewport height */
+            text-align: center;
+        }
+
+        .centerimage-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        .centerimage {
+            height: 600px;
+            width: 400px;
+        }
+
+        .textline {
+            margin-bottom: 20px;
+        }
+      
+   #main #nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 3vw;
+    margin-top: 2vw;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    }
+    #nav h1{
+    font-family:monument extended;
+    font-size: 45px;
+    letter-spacing: -1 ;
+    width: 20%;
+    position: relative;
+}
+
+#nav h1::after{
+    content: "©";
+    font-size: 20px;
+    position: absolute;
+    font-family: 'gilroy';
+    font-weight: 70%;
+    top: 4px;
+}
+
+#nav h1::before{
+    content: "model management";
+    font-size: 13px;
+    position: absolute;
+    font-family: 'gilroy';
+    top: 40px;
+    width: 140px;
+    left: 20%;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: rgb(69, 69, 69);
+}
+#nav h2{
+    height: 10vh;
+    width: 22%;
+    border-right: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+#nav h2:nth-last-child(2){
+    width: 26%;
+}
+
+#nav h2:nth-last-child(1){
+    width: 10%;
+} 
+    .Center{
+        height: 100%;
+        width: 100%;
+        position: relative;
+        padding: 3vw;
+        overflow-x: hidden;
+    }
+    .vid{
+        width: 100%;
+        height: 100%;
+    }
+    .Alltext{
+       position: absolute;
+       height: 50%;
+       width: 80%;
+       bottom: 0;
+       color: white;
+     
+    }
+.newtxt{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+}
+.top-left{
+    width: 100px;
+    height: 100px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.bottom h5{
+    font-size: 20px;
+    font-weight: 400;
+}
+.arrow{
+    font-size: 20px;
+    font-weight: 100;
+}
+
+#image2 #part{
+    height: 100%;
+    width: 100%;
+    display: inline;
+    /*padding: 1vw;
+    animation-name: myanimation;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;*/
+}
+
+#part img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+}
+#alphabets{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#alphabets h2{
+    font-style:italic;
+    border-bottom: 2px solid black;
+    font-weight: 400;
+}
+
+#alphabets h3{
+    font-style: italic;
+    height: 30px;
+    width: 30px;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+}
+
+#alphabets h3:hover{
+    border-radius: 50%;
+    border: 1px solid black;
+    cursor: pointer;
+}
+#wholepage{
+    height: 20%;
+    width: 10%;
+    display:flex;
+    gap: 40px;
+    padding-bottom: 15px;
+}
+#wholepage-left{
+    width:60%;
+    height: 100%;
+}
+
+#wholepage-right{
+    width:40%;
+    height: 100%;
+}
+#wholepage-leftpage #leftimage{
+    width: 30%;
+    height: 100%;
+    object-fit:fill;
+}
+
+#wholepage-rightpage #right-image{
+    height: 100%
+    width: 100%;
+}
+
+#rightpage-image img{
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#wholepage-rightpage #para{
+    height: 30%;
+    width: 100%;
+}
+
+#paragraph{
+    padding-top: 20px;
+    display: flex;
+    gap:20px;
+}
+
+#paragraph #para1{
+    width: 95%;
+    font-weight:700 ;
+    font-size: large;
+}
+
+#paragraph #para2{
+
+    font-weight:400 ;
+    font-size: medium;
+}
+#paraleftpage{
+    padding-top: 20px;
+    display: flex;
+    gap:20px;
+}
+#paraleftpage #paraleft{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 3px;
+    font: weight 500px;
+    font-size: xx-large;
+    font-weight: bold;
+}
+#girlypage{
+    min-height: 70%;
+    width: 70%; 
+    display: flex;
+    background-color: white; 
+    clear: both;
+}
+#girlypage-lefthandside{
+    width: 50%;
+    height: 100%;
+    
+}
+#girlypage-righthandside{
+    width: 70%;
+    height: 100%;
+}
+
+#girlypage-lefthandside #roundpic{
+    height: auto;
+    width: 80%;
+   text-align: center;
+}
+#roundpic #img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+#girlypage-lefthandside #paraARTC{
+    padding-top: 20px;
+    text-align: center;
+    width:50%;   
+}
+#paraARTC #paraf{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    
+}
+#girlypage-righthandside img{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+#nextpage {
+    min-height: 300px; 
+    width: 100%; 
+    display: flex;
+    gap: 0;
+    background-color: white;
+    position:relative;
+    margin-top: 0;
+    clear: both;
+    overflow: hidden; 
+}
+
+#picofagirl {
+    width: 150%;
+    height: 100%;
+}
+
+#picofagirl img {  /* Corrected the selector */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fully covers the area */
+}
+
+</style>
+</head>
+<body>
+     <div class="container">
+        <div class="Website_title">
+            premier
+            <img class="styledimage" src="https://cdn.britannica.com/86/242386-050-19C14920/copyright-symbol.jpg?w=400&h=300&c=crop" alt="C">
+            <div class="model">model management</div>
+        </div>
+      </div>
+    
+     <div class="word-container">
+        <span class="agency">Model agency</span>
+        <span class="UX">UX/UI</span>
+        <span class="web">Website</span>
+        <span class="site">2020/Redesign</span>
+      </div>
+
+     <div class="imagecont">
+        <div class="textline"></div>
+        <div class="centerimage-container">
+            <img class="centerimage" src="https://i.pinimg.com/736x/43/a0/0f/43a00f900ccfcc5975c0680535448da5.jpg" alt="centerimage">
+        </div>
+     </div>
+      
+      <div id="Secondpage">
+    <div id="main">
+        <div id="nav">
+           <h1>premier</h1>
+           <h2>Models</h2>
+           <h2>Women/Man</h2>
+           <h2>Agency/Blog/Information</h2>
+            <h2><i class="ri-search-fill"></i></h2>
+        </div>
+    </div>
+        <div class="Center">
+           <div class="vid">
+              <video autoplay muted src="../ASSETS/image17.mp4"></video>
+           </div>
+          <div class="Alltext">
+               <div class="newtxt">
+                    Photography <br />
+                    and films
+                 <div class="top-left">
+                        01
+                 </div>
+              <div class="bottom">
+                <h5>Explore</h5>
+                <div class="arrow">
+                    <i class="ri-arrow-right-line"></i>
+                </div>
+              </div>
+            </div>
+               </div>
+            </div>
+        </div>
+            <div id="image2">
+                <div id="part">
+                    <img src="../ASSETS/image3.jpg" alt="image" />
+                    <img src="../ASSETS/image4.jpg" alt="image" />
+                    <img src="../ASSETS/image13.jpg" alt="image" />
+                    <img src="../ASSETS/image14.jpg" alt="image" />
+                    <img src="../ASSETS/image11.jpg" alt="image" />
+                    <img src="../ASSETS/image9.jpg"  alt="image" />
+                </div>
+                <div id="part">
+                    <img src="../ASSETS/image3.jpg" alt="image" />
+                    <img src="../ASSETS/image4.jpg" alt="image" />
+                    <img src="../ASSETS/image13.jpg" alt="image" />
+                    <img src="../ASSETS/image14.jpg" alt="image" />
+                    <img src="../ASSETS/image11.jpg" alt="image" />
+                    <img src="../ASSETS/image9.jpg"  alt="image" />
+                </div>
+            </div>
+        
+        <div id="alphabets">
+            <h2>ALL</h2>
+            <h3>A</h3>
+            <h3>B</h3>
+            <h3>C</h3>
+            <h3>D</h3>
+            <h3>E</h3>
+            <h3>F</h3>
+            <h3>G</h3>
+            <h3>H</h3>
+            <h3>I</h3>
+            <h3>J</h3>
+            <h3>K</h3>
+            <h3>L</h3>
+            <h3>M</h3>
+            <h3>N</h3>
+            <h3>O</h3>
+            <h3>P</h3>
+            <h3>Q</h3>
+            <h3>R</h3>
+            <h3>S</h3>
+            <h3>T</h3>
+            <h3>U</h3>
+            <h3>V</h3>
+            <h3>W</h3>
+            <h3>X</h3>
+            <h3>Y</h3>
+            <h3>Z</h3>
+        </div>
+  <div id="wholepage">
+     <div id="leftpage">
+            <div id="leftimage">
+              <img src="../ASSETS/image1.jpg" alt="image" />
+            </div>
+     <div id="paraleftpage">
+        <p id="paraleft">
+            VOGUE / SHOT
+        </p>
+     </div>
+     </div>
+     <div id="rightpage">
+           <div id="rightimage">
+               <img src="../ASSETS/image7.jpg" alt="image" />
+           </div>
+         <div id="paragraph">
+            <p id="para1">
+                    Hannah Motler 
+                    features in a 
+                    fashion story by
+                    the lake for 
+                    vogue new short
+            </p>
+            <p id="para2">
+               Such exposure to the fashion and 
+               beautiful industries enabled her
+               passion for branding and 
+               creativity to transition from one
+               side of the camera to the other.
+            </p>
+        </div>
+     </div>
+  </div>
+  <div id="girlypage">
+     <div id="lefthandside">
+       <div id="roundpic">
+           <img src="../ASSETS/image12.jpg" alt="image" />
+       </div>
+       <div id="paraARTC">
+           <p id="paraf">
+               Maison ARTC: memories and culture,
+               the base of futuristic fashion
+               awareness.Seemlessly weaving
+               tradition into avant-grade expression, where Tilila Oulhaj embodies 
+               the essence of timeliness inovations.Each piece tells a story, merging 
+               heritage with moderenity in a bold artistic vision. 
+       </div>
+     </div>
+       <div id="righthandside">
+          <img src="../ASSETS/image15.jpg" alt="image" />  
+       </div>
+  </div>
+  <div id="nextpage">
+    <div id="picofagirl">
+        <img src="../ASSETS/image18.jpg" alt="image" />
+    </div>
+</div>
+</body>
+</html>
